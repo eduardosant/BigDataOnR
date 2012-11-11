@@ -30,7 +30,7 @@ t.5 <- bigtabulate(data,
                    ccols = "DayOfWeek",
                    summary.cols = "ArrDelay", summary.na.rm = TRUE)
 ## Pretty-fy the outout
-stat.names <- dimnames(t.5.2$summary[[1]])[2][[1]]
+stat.names <- dimnames(t.5$summary[[1]])[2][[1]]
 t.5.p <- cbind(matrix(unlist(t.5$summary), byrow = TRUE,
                       nrow = length(t.5$summary),
                       ncol = length(stat.names),
